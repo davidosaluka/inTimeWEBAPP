@@ -2,7 +2,7 @@
 
 export default function Hero() {
     const handleWhatsAppClick = () => {
-        window.open('https://wa.me/2348000000000?text=Hello%20InTime,%20I%20want%20to%20send%20a%20package', '_blank');
+        window.open('https://wa.me/2348151033428?text=Hello%20InTime,%20I%20want%20to%20send%20a%20package', '_blank');
     };
 
     return (

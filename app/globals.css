@@ -11,11 +11,22 @@
 
   html {
     @apply scroll-smooth;
+    @apply scroll-smooth;
+    @apply w-full overflow-x-hidden;
+    min-height: 100vh;
+    position: relative;
   }
 
   body {
     @apply font-sans antialiased;
     @apply bg-white text-navy;
+    @apply w-full overflow-x-hidden;
+    min-height: 100vh;
+    position: relative;
+  }
+    #__next {
+    @apply w-full overflow-x-hidden;
+    min-height: 100vh;
   }
 }
 

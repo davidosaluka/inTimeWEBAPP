@@ -28,15 +28,14 @@ export default function Navbar() {
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
                 ? 'bg-navy/95 backdrop-blur-md shadow-lg py-0'
-                : 'bg-white/80 backdrop-blur-sm py-2'
+                : 'bg-white/80 backdrop-blur-sm py-1'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-4 md:px-8">
-                <div className="flex items-center justify-between h-20">
-                    {/* Logo */}
+                <div className="flex items-center justify-between h-14 md:h-16">
                     {/* Logo */}
                     <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('hero')}>
-                        <div className="relative h-10 w-32 md:h-12 md:w-40">
+                        <div className="relative h-8 w-24 md:h-10 md:w-32">
                             <Image
                                 src={scrolled ? "/logo_dark-nbg.png" : "/logo_light-png.png"}
                                 alt="InTime Logo"
@@ -93,7 +92,7 @@ export default function Navbar() {
 
                 {/* Mobile Menu */}
                 {mobileMenuOpen && (
-                    <div className="md:hidden py-4 bg-white shadow-xl rounded-b-2xl border-t border-gray-100 absolute left-0 right-0 top-20">
+                    <div className="md:hidden py-4 bg-white shadow-xl rounded-b-2xl border-t border-gray-100 absolute left-0 right-0 top-14 md:top-16">
                         <div className="flex flex-col space-y-4">
                             {['About', 'Services', 'How It Works', 'Contact'].map((item) => (
                                 <button

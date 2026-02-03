@@ -103,7 +103,7 @@ export default function HowItWorks() {
                 {/* CTA */}
                 <div className="text-center mt-16">
                     <button
-                        onClick={() => window.open('https://wa.me/2348000000000?text=Hello%20InTime,%20I%20want%20to%20send%20a%20package', '_blank')}
+                        onClick={() => window.open('https://wa.me/2348151033428?text=Hello%20InTime,%20I%20want%20to%20send%20a%20package', '_blank')}
                         className="btn-primary"
                     >
                         Start Your Delivery Now
