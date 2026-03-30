@@ -5,6 +5,7 @@ import HowItWorks from '../components/HowItWorks';
 import ServiceCoverage from '../components/ServiceCoverage';
 import FinalCTA from '../components/FinalCTA';
 import Footer from '../components/Footer';
+import PrivacyPolicy from '../components/PrivacyPolicy';
 
 export default function Home() {
     return (
@@ -15,7 +16,9 @@ export default function Home() {
             <ValueProposition />
             <HowItWorks />
             <FinalCTA />
+            <PrivacyPolicy />
             <Footer />
+            
         </main>
     );
 }

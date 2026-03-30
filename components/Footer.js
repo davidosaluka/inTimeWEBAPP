@@ -35,7 +35,7 @@ export default function Footer() {
                         {/* Social Media */}
                         <div className="flex items-center gap-4">
                             <a
-                                href="https://wa.me/2348000000000"
+                                href="https://wa.me/2348151033428"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-10 h-10 bg-white/10 hover:bg-brand-orange rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -46,7 +46,7 @@ export default function Footer() {
                                 </svg>
                             </a>
                             <a
-                                href="https://instagram.com/intime"
+                                href="https://instagram.com/send.intime"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-10 h-10 bg-white/10 hover:bg-brand-orange rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -57,7 +57,7 @@ export default function Footer() {
                                 </svg>
                             </a>
                             <a
-                                href="https://twitter.com/intime"
+                                href="https://twitter.com/send.intime"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-10 h-10 bg-white/10 hover:bg-brand-orange rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -68,7 +68,7 @@ export default function Footer() {
                                 </svg>
                             </a>
                             <a
-                                href="https://facebook.com/intime"
+                                href="https://facebook.com/send.intime"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-10 h-10 bg-white/10 hover:bg-brand-orange rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -110,9 +110,12 @@ export default function Footer() {
                                 </button>
                             </li>
                             <li>
-                                <a href="#" className="text-white/70 hover:text-brand-orange transition-colors duration-200">
+                               <button
+                                    onClick={() => scrollToSection('privacy-policy')}
+                                    className="text-white/70 hover:text-brand-orange transition-colors duration-200"
+                                >
                                     Privacy Policy
-                                </a>
+                                </button>
                             </li>
                             <li>
                                 <a href="#" className="text-white/70 hover:text-brand-orange transition-colors duration-200">
