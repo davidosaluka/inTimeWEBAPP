@@ -94,7 +94,7 @@ export default function VendorDeliveries() {
                 <th className="text-gray-600 font-medium px-4 py-3 whitespace-nowrap">Package</th>
                 <th className="text-gray-600 font-medium px-4 py-3 whitespace-nowrap">Pickup</th>
                 <th className="text-gray-600 font-medium px-4 py-3 whitespace-nowrap">Delivery</th>
-                <th className="text-gray-600 font-medium px-4 py-3 whitespace-nowrap">Fee</th>
+                <th className="text-gray-600 font-medium px-4 py-3 whitespace-nowrap">Estimated Fee</th>
                 <th className="text-gray-600 font-medium px-4 py-3 whitespace-nowrap">Date</th>
                 <th className="text-gray-600 font-medium px-4 py-3 whitespace-nowrap">Actions</th>
               </tr>

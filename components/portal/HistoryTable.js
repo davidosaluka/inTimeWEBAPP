@@ -55,11 +55,11 @@ export default function HistoryTable({ showFeeColumn, userRole = 'rider' }) {
   }
 
   const columns = ['Order ID', ...(userRole === 'admin'
-    ? ['Rider', 'Package', 'Pickup', 'Delivery', 'Fee', 'Status', 'Vendor', 'Vendor Note', 'Final Price', 'Date', 'Actions']
+    ? ['Rider', 'Package', 'Pickup', 'Delivery', 'Estimated Fee', 'Status', 'Vendor', 'Vendor Note', 'Final Price', 'Date', 'Actions']
     : userRole === 'vendor'
-    ? ['Rider', 'Package', 'Pickup', 'Delivery', 'Fee', 'Status', 'Note', 'Final Price', 'Date']
+    ? ['Rider', 'Package', 'Pickup', 'Delivery', 'Estimated Fee', 'Status', 'Note', 'Final Price', 'Date']
     : showFeeColumn
-    ? ['Package', 'Pickup', 'Delivery', 'Fee', 'Status', 'Vendor', 'Vendor Note', 'Final Price', 'Date', 'Actions']
+    ? ['Package', 'Pickup', 'Delivery', 'Estimated Fee', 'Status', 'Vendor', 'Vendor Note', 'Final Price', 'Date', 'Actions']
     : ['Package', 'Pickup', 'Delivery', 'Status', 'Vendor', 'Vendor Note', 'Final Price', 'Date', 'Actions']
   )]
 
