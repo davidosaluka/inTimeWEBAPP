@@ -20,8 +20,9 @@ const policies = [
         content: `We take reasonable steps to protect your personal information from unauthorized access or disclosure. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.`,
     },
     {
-        title: 'Your Rights',
-        content: `You have the right to request access to, correction of, or deletion of your personal data at any time. To exercise these rights, contact us directly on WhatsApp or via email: intimesender@gmail.com, and we will respond promptly.`,
+        title: 'Your Rights & Account Deletion',
+        content: `You have the right to request access to, correction of, or deletion of your personal data at any time. To request deletion of your account and delivery history, message 'Delete my Account' to our WhatsApp bot or email support@intime.ng with your registered phone number. Data is permanently purged within 30 days.`,
+        action: { text: "Go to Account Deletion Request Page", href: "/delete-account" },
     },
     {
         title: 'Changes to This Policy',
@@ -76,12 +77,20 @@ function AccordionItem({ item, index, isOpen, onToggle }) {
             {/* Body */}
             <div
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+                    isOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
                 }`}
             >
-                <p className="px-6 pb-6 pt-0 text-white/70 leading-relaxed pl-[4.5rem]">
-                    {item.content}
-                </p>
+                <div className="px-6 pb-6 pt-0 text-white/70 leading-relaxed pl-[4.5rem]">
+                    <p>{item.content}</p>
+                    {item.action && (
+                        <a
+                            href={item.action.href}
+                            className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-lg bg-brand-orange/20 text-brand-orange hover:bg-brand-orange hover:text-white transition-all text-sm font-semibold"
+                        >
+                            {item.action.text} &rarr;
+                        </a>
+                    )}
+                </div>
             </div>
         </div>
     );
